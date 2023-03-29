@@ -1,8 +1,10 @@
 
 .box {
 	display: flex;
-	/* height: 20vh; */
+	height: 96vh;
+	width: 94vw;
 	align-items: center;
+	background-color: yellow;
 }
 .sizes {
    	margin: 0 auto;
