@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', function() {
     let bottom = box.querySelector('.bottom');
 
     let wBox = box.getBoundingClientRect();
-    console.log(box.getBoundingClientRect());
 
     offsetWidth.innerHTML = wBox.width + 'px'; 
     offsetHeight.innerHTML = wBox.height + 'px'; 
