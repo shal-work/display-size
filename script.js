@@ -11,11 +11,16 @@ window.addEventListener('DOMContentLoaded', function() {
 
     let offsetWidth = box.querySelector('.offset-width');
     let offsetHeight = box.querySelector('.offset-height');
+    let top = box.querySelector('.top');
+    let bottom = box.querySelector('.bottom');
 
     let wBox = box.getBoundingClientRect();
+    console.log(box.getBoundingClientRect());
 
     offsetWidth.innerHTML = wBox.width + 'px'; 
     offsetHeight.innerHTML = wBox.height + 'px'; 
+    top.innerHTML = wBox.top + 'px'; 
+    bottom.innerHTML = wBox.bottom + 'px'; 
 
 });
 

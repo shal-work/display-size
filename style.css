@@ -1,11 +1,13 @@
 
 .box {
 	display: flex;
+	position: absolute;
 	height: 96vh;
 	width: 94vw;
 	align-items: center;
 	background-color: yellow;
 }
 .sizes {
+	position: absolute;
    	margin: 0 auto;
 }
