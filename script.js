@@ -2,25 +2,21 @@
 
 window.addEventListener('DOMContentLoaded', function() { 
     let box = document.querySelector('.box');
-    let width = box.querySelector('.sizes-width');
-    let height = box.querySelector('.sizes-height');
+    let width = document.querySelector('.sizes-width');
+    let height = document.querySelector('.sizes-height');
 
     width.innerHTML = document.documentElement.clientWidth + 'px'; 
     height.innerHTML = document.documentElement.clientHeight + 'px'; 
 
+    let sizes = document.querySelector('.sizes');
+    let offsetWidth = sizes.querySelector('.offset-width');
+    let offsetHeight = sizes.querySelector('.offset-height');
 
-    let offsetWidth = box.querySelector('.offset-width');
-    let offsetHeight = box.querySelector('.offset-height');
-    let top = box.querySelector('.top');
-    let bottom = box.querySelector('.bottom');
+    let rectSizes = sizes.getBoundingClientRect();
+    console.log(sizes.getBoundingClientRect());
 
-    let wBox = box.getBoundingClientRect();
-    console.log(box.getBoundingClientRect());
-
-    offsetWidth.innerHTML = wBox.width + 'px'; 
-    offsetHeight.innerHTML = wBox.height + 'px'; 
-    top.innerHTML = wBox.top + 'px'; 
-    bottom.innerHTML = wBox.bottom + 'px'; 
+    offsetWidth.innerHTML = rectSizes.width + 'px'; 
+    offsetHeight.innerHTML = rectSizes.height + 'px'; 
 
 });
 

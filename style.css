@@ -1,13 +1,30 @@
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .box {
-	display: flex;
+	display: block;
 	position: absolute;
-	height: 96vh;
-	width: 94vw;
-	align-items: center;
+	top:0%;
+	height: 100%;
+	width: 100%;
 	background-color: yellow;
+	align-items: center;
 }
 .sizes {
-	position: absolute;
+	display: flex;
+	position: relative;
+	top: 5%;
+	bottom: 5%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: calc(100% - 10%);
+	width: calc(100% - 10%);
+	/* width: 10%; */
+	/* width: calc(100%); */
    	margin: 0 auto;
+	background-color: rgb(150, 206, 241);
 }
