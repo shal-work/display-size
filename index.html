@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="script.js" defer></script>
     <style type="text/css">
         /* @import url(/style.css); */
     </style>
@@ -16,6 +16,9 @@
 <body>
     <div class="box">
         <div class="sizes">
+            <p>screen.width= <span class="screen-width"></span> </p>
+            <p>screen.height = <span class="screen-height"></span></p>
+            <div>-----------</div>
             <p>clientWidth = <span class="sizes-width"></span> </p>
             <p>clientHeight = <span class="sizes-height"></span></p>
             <div>-----------</div>
@@ -25,7 +28,25 @@
     </div>
 
     
-   <script src="script.js"></script>
+   <!-- <script >
+
+        let box = document.querySelector('.box');
+        let width = document.querySelector('.sizes-width');
+        let height = document.querySelector('.sizes-height');
+
+        width.innerHTML = document.documentElement.clientWidth + 'px'; 
+        height.innerHTML = document.documentElement.clientHeight + 'px'; 
+
+        let sizes = document.querySelector('.sizes');
+        let offsetWidth = sizes.querySelector('.offset-width');
+        let offsetHeight = sizes.querySelector('.offset-height');
+
+        let rectSizes = sizes.getBoundingClientRect();
+        console.log(sizes.getBoundingClientRect());
+
+        offsetWidth.innerHTML = rectSizes.width + 'px'; 
+        offsetHeight.innerHTML = rectSizes.height + 'px'; 
+   </script> -->
 </body>
 
 </html>
