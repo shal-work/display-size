@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     
     width.innerHTML = document.documentElement.clientWidth + 'px'; 
-    height.innerHTML = document.documentElement.clientHeight + '-1-px'; 
+    height.innerHTML = document.documentElement.clientHeight + 'px'; 
 
 
     let sizes = document.querySelector('.sizes');
