@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
         
     screenWidth.innerHTML = window.screen.width + 'px'; 
     screenHeight.innerHTML = window.screen.height + 'px'; 
+    console.log(window.screen);
     
     
     width.innerHTML = document.documentElement.clientWidth + 'px'; 
